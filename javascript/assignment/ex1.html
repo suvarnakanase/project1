@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom structure</title>
+    </head>
+    <body>
+        
+            <input type="text" class="mob-no">
+            <input type="text" class="email-id">
+            <button type="submit" onclick="submitform()">Submit</button>
+            <p id="errormsg"></p>
+        <script>
+            function submitform(){
+                 mobno = document.querySelector(".mob-no").value;
+                 console.log(document.querySelector(".mob-no"));
+                 //alert( mobno.lenght);
+ 
+                 emailid = document.querySelector('.email-id').value;
+                 console.log(emailid);
+
+                 if(mobno == "" || mobno == null ){
+                    document.querySelector("#errormsg").innerHTML = "should not be blank"
+                 }
+                 else{
+
+                    if(isNaN(mobno)){
+                     document.querySelector("#errormsg").innerHTML = "should be number"
+                    }
+                    else if (mobno.length < 10 || mobno.length > 10)
+                    {
+                        document.querySelector("#errormsg").innerHTML = "should be equal to 10 digits"
+                    }
+                     else {  
+                         document.querySelector('#errormsg').innerHTML = "correct"
+                     }
+                    
+                 }
+
+                 if(emailid == "" || emailid == null ){
+                    document.getElementById("demo").innerHTML = "email id should not be blank";
+                 }
+                 
+            }
+            
+            
+
+            //var 
+        </script>
+    </body>
+</html>

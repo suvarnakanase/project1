@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom structure</title>
+    </head>
+    <body>
+        <p>querySelector, innerHTML and innerText</p>
+        <p>Test2</p>
+        <h1 id="test1">Hello</h1>
+        <h1 id="test1">All </h1>
+        <h1 class="test1">Hello</h1>
+        <h1 class="test1">All</h1>
+        <script>
+            console.log(document);
+            console.log(document.querySelector("p"));
+            document.querySelector("p").style.backgroundColor = ("#ccc");
+            document.querySelector("#test1").innerText = "<i> hi suvi</i>";
+            document.querySelector("#test1").innerHTML = "<i> hi suvi</i>";
+            document.querySelector(".test1").innerHTML = "<ul>list</ul>"
+        </script>
+    </body>
+</html>

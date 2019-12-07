@@ -1,0 +1,19 @@
+<div>
+	<img src="128/img1.jpeg" onmouseover="change_image(this)">
+	<img src="128/img2.jpeg" onmouseover="change_image(this)">
+	<img src="128/img3.jpeg" onmouseover="change_image(this)">
+</div>
+
+<div>
+	<img src="880/img1.jpeg" id="mainimg">
+</div>
+
+<script type="text/javascript">
+	function change_image(myvar){
+		// console.log(myvar)
+		// console.log(myvar.getAttribute("src"))
+		myvar1= myvar.getAttribute("src").replace("128","880")
+		// console.log(myvar1)
+		document.querySelector("#mainimg").setAttribute("src",myvar1)
+	}
+</script>

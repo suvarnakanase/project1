@@ -1,0 +1,14 @@
+<button onclick="myfunc(this)">Enter</button>
+
+<img src="product1.jpg" id="imgrec">
+<script type="text/javascript">
+	function myfunc(abcd){
+		console.log( document.querySelector("#imgrec") )
+		// document.querySelector("#imgrec").attributes.src.value = "product2.jpg"
+		 document.querySelector("#imgrec").setAttribute("src","product2.jpg")
+
+		 console.log(abcd)
+		 console.log(typeof abcd)
+
+	}
+</script>

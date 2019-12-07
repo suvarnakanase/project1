@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<h1 id="rec1" class="myclass">hello</h1>
+	<input type="text" id="rec2" value="90">
+
+	<script type="text/javascript">
+		console.log(document)
+		
+		document.querySelector("#rec3").value = 980;
+		// document.querySelector(...) is null
+		document.queryselector("#rec2").value = 980;
+		//TypeError: document.queryselector is not a function
+		
+	</script>
+	<style type="text/css">
+		#rec1{
+			colour:red;
+		}
+	</style>
+</body>
+</html>

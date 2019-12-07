@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>test</p>
+	<p>test</p>
+	<h1 id="h1rec">hello</h1>
+	<h1 id="h1rec">hello</h1>
+
+	<div class="divrec"> hllo1 </div>
+	<div class="divrec"> hllo1 </div>
+
+	<script type="text/javascript">
+		console.log(document)
+		console.log(document.querySelector("p"))
+		document.querySelector("p").style.background="#ccc"
+
+		console.log(document.querySelector("#h1rec"))
+		document.querySelector("#h1rec").innerText = "<i>my rec</i>";
+		document.querySelector("#h1rec").innerHTML = "<i>my rec</i>";
+
+		document.querySelector(".divrec").innerHTML = "<u> test </u>";
+	</script>
+</body>
+</html>
